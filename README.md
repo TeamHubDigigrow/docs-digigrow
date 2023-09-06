@@ -1,4 +1,4 @@
-## API Digigrow Hub
+# API Digigrow Hub
 
 ✍🏻 Documentação da API pública do Digigrow Hub
 
@@ -12,10 +12,75 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 2. Após ter sua empresa aprovada, acesse o [Digigrow Hub](https://app.digigrow.com.br/), selecione no menu de navegação a tela "Configurações" e copie o seu "Token para integrações";
 3. Insira o Token copiado como valor do parâmetro "Authorization" de sua chamada, dentro do Header da requisição.
 
-- Produtos
-    - Listar um produto
-    - Listar todos os produtos
-    - Cadastrar um novo produto
-- Pedidos
-    - Listar um pedido
-    - Listar todos os pedidos
+## Pedidos
+
+1. Listar um pedido
+   curl: linkaqui
+
+   ```json
+    {
+      "nome": "Exemplo de JSON",
+      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
+      "data": "2023-09-06",
+      "ativo": true,
+      "valores": [10, 20, 30]
+    }
+    ```
+
+2. Listar vários pedidos
+   curl: linkaqui
+
+   ```json
+    {
+      "nome": "Exemplo de JSON",
+      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
+      "data": "2023-09-06",
+      "ativo": true,
+      "valores": [10, 20, 30]
+    }
+    ```
+
+    | Campo        | Descrição                             |
+    |--------------|---------------------------------------|
+    | Nome         | Nome do cliente                       |
+    | Idade        | Idade do cliente                      |
+    | Email        | Endereço de e-mail do cliente         |
+    | Telefone     | Número de telefone do cliente         |
+    | Endereço     | Endereço físico do cliente            |
+
+
+## Produtos
+
+1. Listar um produto
+   curl: linkaqui
+
+   ```json
+    {
+      "nome": "Exemplo de JSON",
+      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
+      "data": "2023-09-06",
+      "ativo": true,
+      "valores": [10, 20, 30]
+    }
+    ```
+
+2. Listar vários produtos
+   curl: linkaqui
+
+   ```json
+    {
+      "nome": "Exemplo de JSON",
+      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
+      "data": "2023-09-06",
+      "ativo": true,
+      "valores": [10, 20, 30]
+    }
+    ```
+
+    | Campo        | Descrição                             |
+    |--------------|---------------------------------------|
+    | Nome         | Nome do cliente                       |
+    | Idade        | Idade do cliente                      |
+    | Email        | Endereço de e-mail do cliente         |
+    | Telefone     | Número de telefone do cliente         |
+    | Endereço     | Endereço físico do cliente            |
