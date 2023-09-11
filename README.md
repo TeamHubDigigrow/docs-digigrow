@@ -10,11 +10,12 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 1. Crie uma conta no [Digigrow Hub](https://app.digigrow.com.br/), cadastre sua empresa e aguarde aprovação;
 2. Após ter sua empresa aprovada, acesse o [Digigrow Hub](https://app.digigrow.com.br/), selecione no menu de navegação a tela "Configurações" e copie o seu "Token para integrações";
-3. Insira o Token copiado como valor do parâmetro "Authorization" de sua chamada, dentro do Header da requisição.
+3. Insira o Token copiado como valor do parâmetro "Authorization" de sua chamada, **dentro do Header da requisição**.
 
 ## Pedidos
 
 1. Listar um pedido
+
    curl: linkaqui
 
    ```json
@@ -23,15 +24,21 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     }
     ```
 
-2. Listar vários pedidos
+3. Listar vários pedidos
+
    curl: linkaqui
 
-   ```json
-    {
+   Enviar no Params:
    
-    }
-    ```
-
+    | Campo        | Descrição                             |
+    |--------------|---------------------------------------|
+    | page         | Número da página (paginação)          |
+    | status       | Status do pedido                      |
+    | dateStart    | Data inicial (ano-mês-dia)            |
+    | dateEnd      | Data final (ano-mês-dia)              |
+   
+   Retorno:
+   
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
     | _id          | Número de identificação do pedido     |
