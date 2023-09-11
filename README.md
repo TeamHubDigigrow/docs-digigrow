@@ -1,6 +1,6 @@
 # API Digigrow Hub
 
-✍🏻 Documentação da API pública do Digigrow Hub
+✍🏻 Documentação da API pública do Digigrow Hub (Work in progress)
 
 💬 A API pública da Digigrow é uma interface que permite que desenvolvedores e usuários acessem dados e funcionalidades de nossos produtos e serviços. Com a API, é possível construir aplicativos integrados que oferecem uma experiência personalizada aos usuários.
 
@@ -19,11 +19,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
    ```json
     {
-      "nome": "Exemplo de JSON",
-      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
-      "data": "2023-09-06",
-      "ativo": true,
-      "valores": [10, 20, 30]
+      "id": 012345678910
     }
     ```
 
@@ -32,21 +28,24 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
    ```json
     {
-      "nome": "Exemplo de JSON",
-      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
-      "data": "2023-09-06",
-      "ativo": true,
-      "valores": [10, 20, 30]
+   
     }
     ```
 
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
-    | Nome         | Nome do cliente                       |
-    | Idade        | Idade do cliente                      |
-    | Email        | Endereço de e-mail do cliente         |
-    | Telefone     | Número de telefone do cliente         |
-    | Endereço     | Endereço físico do cliente            |
+    | _id          | Número de identificação do pedido     |
+    | externalId   | ?                                     |
+    | packId       | ?                                     |
+    | createdAt    | Data de início do pedido              |
+    | updatedAt    | Data da última atualização do pedido  |
+    | status       | Status do pagamento                   |
+    | buyer        | Objeto com os dados do comprador      |
+    | gross        | ?                                     |
+    | receivement  | ?                                     |
+    | items        | Objeto com os dados do produto        |
+    | payments     | Objeto com os dados de pagamento      |
+    | shipping     | Objeto com os dados de envio          |
 
 
 ## Produtos
@@ -56,11 +55,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
    ```json
     {
-      "nome": "Exemplo de JSON",
-      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
-      "data": "2023-09-06",
-      "ativo": true,
-      "valores": [10, 20, 30]
+      "id": 012345678910
     }
     ```
 
