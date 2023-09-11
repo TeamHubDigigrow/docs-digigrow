@@ -16,20 +16,26 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 1. Listar um pedido
 
-   curl: linkaqui
+   ```
+   curl --location 'http://endpointaqui/order'
+   ```
    
    Endereço: endpointaqui
 
    1.1. Inserir o valor do campo "externalId", passar como "id"
    ```json
     {
-      "id": 012345678910
+      "id": 202312345678910
     }
     ```
 
 2. Listar vários pedidos
 
-   curl: linkaqui
+   ```
+   curl --location 'http://endpointaqui/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   --header 'Authorization: seuTokenAqui' \
+   --data ''
+   ```
    
    Endereço: endpointaqui
 
