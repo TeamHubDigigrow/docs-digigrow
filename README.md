@@ -17,16 +17,21 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 1. Listar um pedido
 
    curl: linkaqui
+   
+   Endereço: endpointaqui
 
+   1.1. Inserir o valor do campo "externalId", passar como "id"
    ```json
     {
       "id": 012345678910
     }
     ```
 
-3. Listar vários pedidos
+2. Listar vários pedidos
 
    curl: linkaqui
+   
+   Endereço: endpointaqui
 
    Enviar no Params:
    
@@ -58,7 +63,10 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 ## Produtos
 
 1. Listar um produto
+   
    curl: linkaqui
+   
+   Endereço: endpointaqui
 
    ```json
     {
@@ -67,7 +75,10 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     ```
 
 2. Listar vários produtos
+   
    curl: linkaqui
+   
+   Endereço: endpointaqui
 
    ```json
     {
