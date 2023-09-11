@@ -17,7 +17,12 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 1. Listar um pedido
 
    ```
-   curl --location 'http://endpointaqui/order'
+   curl --location --request GET 'http://endpointaqui/order' \
+   --header 'Authorization: seuTokenAqui' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "id": 202312345678910
+   }'
    ```
    
    Endereço: endpointaqui
@@ -76,7 +81,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
    ```json
     {
-      "id": 012345678910
+      "id": 202312345678910
     }
     ```
 
