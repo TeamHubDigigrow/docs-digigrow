@@ -86,7 +86,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    
    Endereço: endpointaqui
 
-   1.1. Inserir o valor do campo "productId", passar como "id"
+   1.1. Inserir o valor do campo "gtin", passar como "id"
    ```json
     {
       "id": 202312345678910
@@ -116,7 +116,6 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
-    | productId    | Número de identificação do produto    |
     | title        | Título do produto                     |
     | sku          | Código de identificação do produto    |
     | unitPrice    | Preço da unidade                      |
