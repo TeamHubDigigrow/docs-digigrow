@@ -75,10 +75,18 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 1. Listar um produto
    
-   curl: linkaqui
+   ```
+   curl --location --request GET 'http://endpointaqui/product' \
+   --header 'Authorization: seuTokenAqui' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "id": 202312345678910
+   }'
+   ```
    
    Endereço: endpointaqui
 
+   1.1. Inserir o valor do campo "productId", passar como "id"
    ```json
     {
       "id": 202312345678910
@@ -87,24 +95,31 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 2. Listar vários produtos
    
-   curl: linkaqui
+   ```
+   curl --location 'http://endpointaqui/products?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   --header 'Authorization: seuTokenAqui' \
+   --data ''
+   ```
    
    Endereço: endpointaqui
 
-   ```json
-    {
-      "nome": "Exemplo de JSON",
-      "descricao": "Isso é um exemplo de um bloco de código JSON em Markdown.",
-      "data": "2023-09-06",
-      "ativo": true,
-      "valores": [10, 20, 30]
-    }
-    ```
-
+   Enviar no Params:
+   
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
-    | Nome         | Nome do cliente                       |
-    | Idade        | Idade do cliente                      |
-    | Email        | Endereço de e-mail do cliente         |
-    | Telefone     | Número de telefone do cliente         |
-    | Endereço     | Endereço físico do cliente            |
+    | page         | Número da página (paginação)          |
+    | status       | Status do produto                     |
+    | dateStart    | Data inicial (ano-mês-dia)            |
+    | dateEnd      | Data final (ano-mês-dia)              |
+   
+   Retorno:
+   
+    | Campo        | Descrição                             |
+    |--------------|---------------------------------------|
+    | productId    | Número de identificação do produto    |
+    | title        | Título do produto                     |
+    | sku          | Código de identificação do produto    |
+    | unitPrice    | Preço da unidade                      |
+    | gross        | ?                                     |
+    | amount       | Quantidade                            |
+    | saleFee       | ?                                    |
