@@ -49,7 +49,6 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
     | page         | Número da página (paginação)          |
-    | status       | Status do pedido                      |
     | dateStart    | Data inicial (ano-mês-dia)            |
     | dateEnd      | Data final (ano-mês-dia)              |
    
@@ -121,4 +120,4 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     | unitPrice    | Preço da unidade                      |
     | gross        | ?                                     |
     | amount       | Quantidade                            |
-    | saleFee       | ?                                    |
+    | saleFee      | ?                                     |
