@@ -17,12 +17,9 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 1. Listar um pedido
 
    ```
-   curl --location --request GET 'http://endpointaqui/order' \
+   curl --location --request GET 'http://endpointaqui/order/:id' \
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
-   --data '{
-       "id": 202312345678910
-   }'
    ```
    
    Endereço: endpointaqui
@@ -39,7 +36,6 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    ```
    curl --location 'http://endpointaqui/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
    --header 'Authorization: seuTokenAqui' \
-   --data ''
    ```
    
    Endereço: endpointaqui
@@ -48,9 +44,9 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
-    | page         | Número da página (paginação)          |
-    | dateStart    | Data inicial (ano-mês-dia)            |
-    | dateEnd      | Data final (ano-mês-dia)              |
+    | page               | Número da página (paginação)    |
+    | dateStart(opcional)| Data inicial (ano-mês-dia)      |
+    | dateEnd(opcional)  | Data final (ano-mês-dia)        |
    
    Retorno:
    
@@ -72,30 +68,21 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 ## Produtos
 
-1. Listar um produto
-   
+1. Get de produto
+   1.1. Passar o valor do sku no endereço da chamada
    ```
-   curl --location --request GET 'http://endpointaqui/product' \
-   --header 'Authorization: seuTokenAqui' \
-   --header 'Content-Type: application/json' \
-   --data '{
-       "id": 202312345678910
-   }'
+     curl --location --request GET 'http://endpointaqui.com/product/:id' \
+      --header 'Authorization: "seutoken"'
    ```
    
    Endereço: endpointaqui
 
-   1.1. Inserir o valor do campo "gtin", passar como "id"
-   ```json
-    {
-      "id": 202312345678910
-    }
-    ```
+   
 
 2. Listar vários produtos
    
    ```
-   curl --location 'http://endpointaqui/products?page=1&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   curl --location 'http://endpointaqui/products?page=1' \
    --header 'Authorization: seuTokenAqui' \
    --data ''
    ```
@@ -107,8 +94,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
     | page         | Número da página (paginação)          |
-    | dateStart    | Data inicial (ano-mês-dia)            |
-    | dateEnd      | Data final (ano-mês-dia)              |
+
    
    Retorno:
    
@@ -116,7 +102,3 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     |--------------|---------------------------------------|
     | title        | Título do produto                     |
     | sku          | Código de identificação do produto    |
-    | unitPrice    | Preço da unidade                      |
-    | gross        | ?                                     |
-    | amount       | Quantidade                            |
-    | saleFee      | ?                                     |
