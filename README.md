@@ -95,7 +95,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 2. Listar vários produtos
    
    ```
-   curl --location 'http://endpointaqui/products?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   curl --location 'http://endpointaqui/products?page=1&dateStart=2023-01-2&dateEnd=2023-05-3' \
    --header 'Authorization: seuTokenAqui' \
    --data ''
    ```
@@ -107,7 +107,6 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     | Campo        | Descrição                             |
     |--------------|---------------------------------------|
     | page         | Número da página (paginação)          |
-    | status       | Status do produto                     |
     | dateStart    | Data inicial (ano-mês-dia)            |
     | dateEnd      | Data final (ano-mês-dia)              |
    
