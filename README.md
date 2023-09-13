@@ -15,6 +15,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 ## Pedidos
 
 1. Listar um pedido
+   passar número da venda no endereço como "id"
 
    ```
    curl --location --request GET 'http://endpointaqui/order/:id' \
@@ -24,14 +25,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    
    Endereço: endpointaqui
 
-   1.1. Inserir o valor do campo "externalId", passar como "id"
-   ```json
-    {
-      "id": 202312345678910
-    }
-    ```
-
-2. Listar vários pedidos
+3. Listar vários pedidos
 
    ```
    curl --location 'http://endpointaqui/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
