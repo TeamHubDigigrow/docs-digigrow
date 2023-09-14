@@ -96,3 +96,56 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     |--------------|---------------------------------------|
     | title        | Título do produto                     |
     | sku          | Código de identificação do produto    |
+
+3. Criar um produto
+
+   ```
+   curl --location --request POST 'http://endpointaqui/product' \
+   --header 'Authorization: seuTokenAqui' \
+   --header 'Content-Type: application/json' \
+   ```
+   Enviar no body:
+   
+   | Campo        | Descrição                             |
+   |--------------|---------------------------------------|
+   | sku          | sku do produto  (String)              |
+   | gtin         | gtin do produto  (String)             |
+   | title        | Título do produto  (String)           |
+   | price        | Preço do produto   (Number)           |
+   | stock        | Estoque do produto   (Number)         |
+   | cest         | CEST do produto   (String)            |
+   | ncm          | NCM do produto    (String)            |
+   | image        | Enviar URL da imagem                  |
+   | weight       | Peso do produto   (Number)            |
+   | width        | Largura do produto   (Number)         |
+   | height       | Altura do produto   (Number)          |
+   | depth        | Profundidade do produto   (Number)    |
+   | description  | Descrição do produto  (String)        |
+   
+   Endereço: endpointaqui
+   
+5. Alterar um produto
+   4.1. É obrigatório passar o sku do produto no Params da chamada. Abaixo segue exemplo dos campos a serem enviados para alterar o produto.
+
+   ```
+   curl --location --request PUT 'http://endpointaqui/product/:id' \
+   --header 'Authorization: seuTokenAqui' \
+   --header 'Content-Type: application/json' \
+   ```
+   Enviar no body:
+   
+   | Campo                  | Descrição                             |
+   |------------------------|---------------------------------------|
+   | title(opcional)        | Título do produto  (String)           |
+   | price(opcional)        | Preço do produto   (Number)           |
+   | stock(opcional)        | Estoque do produto   (Number)         |
+   | cest(opcional)         | CEST do produto   (String)            |
+   | ncm(opcional)          | NCM do produto    (String)            |
+   | image(opcional)        | Enviar URL da imagem                  |
+   | weight(opcional)       | Peso do produto   (Number)            |
+   | width(opcional)        | Largura do produto   (Number)         |
+   | height(opcional)       | Altura do produto   (Number)          |
+   | depth(opcional)        | Profundidade do produto   (Number)    |
+   | description(opcional)  | Descrição do produto  (String)        |
+   
+   Endereço: endpointaqui
