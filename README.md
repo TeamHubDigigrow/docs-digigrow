@@ -15,7 +15,8 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 ## Pedidos
 
 1. Listar um pedido
-   passar número da venda no endereço como "id"
+   
+   1.1 passar número da venda no endereço como "id"
 
    ```
    curl --location --request GET 'http://endpointaqui/order/:id' \
@@ -24,6 +25,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    ```
    
    Endereço: endpointaqui
+   
 
 3. Listar vários pedidos
 
@@ -33,6 +35,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    ```
    
    Endereço: endpointaqui
+   
 
    Enviar no Params:
    
@@ -63,17 +66,17 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 ## Produtos
 
 1. Get de produto
+   
    1.1. Passar o valor do sku no endereço da chamada
    ```
      curl --location --request GET 'http://endpointaqui.com/product/:id' \
-      --header 'Authorization: "seutoken"'
+      --header 'Authorization: seuTokenAqui'
    ```
    
    Endereço: endpointaqui
-
    
 
-2. Listar vários produtos
+3. Listar vários produtos
    
    ```
    curl --location 'http://endpointaqui/products?page=1' \
@@ -82,6 +85,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    ```
    
    Endereço: endpointaqui
+   
 
    Enviar no Params:
    
@@ -97,13 +101,17 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     | title        | Título do produto                     |
     | sku          | Código de identificação do produto    |
 
-3. Criar um produto
+4. Criar um produto
 
    ```
    curl --location --request POST 'http://endpointaqui/product' \
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
    ```
+   
+   Endereço: endpointaqui
+   
+
    Enviar no body:
    
    | Campo        | Descrição                             |
@@ -122,9 +130,8 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    | depth        | Profundidade do produto   (Number)    |
    | description  | Descrição do produto  (String)        |
    
-   Endereço: endpointaqui
-   
 5. Alterar um produto
+   
    4.1. É obrigatório passar o sku do produto no Params da chamada. Abaixo segue exemplo dos campos a serem enviados para alterar o produto.
 
    ```
@@ -132,6 +139,10 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
    ```
+
+   Endereço: endpointaqui
+   
+   
    Enviar no body:
    
    | Campo                  | Descrição                             |
@@ -147,5 +158,3 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    | height(opcional)       | Altura do produto   (Number)          |
    | depth(opcional)        | Profundidade do produto   (Number)    |
    | description(opcional)  | Descrição do produto  (String)        |
-   
-   Endereço: endpointaqui
