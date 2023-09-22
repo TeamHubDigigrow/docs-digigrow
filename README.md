@@ -1,6 +1,6 @@
 # API Digigrow Hub
 
-✍🏻 Documentação da API pública do Digigrow Hub (Work in progress)
+✍🏻 Documentação da API pública do Digigrow Hub
 
 💬 A API pública da Digigrow é uma interface que permite que desenvolvedores e usuários acessem dados e funcionalidades de nossos produtos e serviços. Com a API, é possível construir aplicativos integrados que oferecem uma experiência personalizada aos usuários.
 
