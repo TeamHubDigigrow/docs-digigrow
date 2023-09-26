@@ -1,4 +1,4 @@
-# API Digigrow Hub
+# API Digigrow
 
 ✍🏻 Documentação da API pública do Digigrow Hub
 
