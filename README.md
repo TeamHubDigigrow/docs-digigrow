@@ -8,8 +8,8 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 
 ## Como configurar?
 
-1. Crie uma conta no [Digigrow Hub](https://app.digigrow.com.br/), cadastre sua empresa e aguarde aprovação;
-2. Após ter sua empresa aprovada, acesse o [Digigrow Hub](https://app.digigrow.com.br/), selecione no menu de navegação a tela "Configurações" e copie o seu "Token para integrações";
+1. Crie uma conta na [Digigrow](https://app.digigrow.com.br/), cadastre sua empresa e aguarde aprovação;
+2. Após ter sua empresa aprovada, acesse a [Digigrow](https://app.digigrow.com.br/), selecione no menu de navegação a tela "Configurações" e copie o seu "Token para integrações";
 3. Insira o Token copiado como valor do parâmetro "Authorization" de sua chamada, **dentro do Header da requisição**.
 
 ## Pedidos
