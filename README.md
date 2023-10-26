@@ -222,6 +222,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     "height": number,
     "depth": number,
     "description": "string"
+    "brand": "string"
 }
    ```
    
