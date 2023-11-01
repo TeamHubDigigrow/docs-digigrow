@@ -239,7 +239,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    Endereço: https://api-v1.digigrow.com.br/product/:id
 
    
-   Enviar no body: https://api-v1.digigrow.com.br/product/:id
+   Enviar no body:
 ```
 {
     "title": "(opcional, string)",
