@@ -1,4 +1,7 @@
-# API Digigrow
+<p align="center">
+    <img src="https://github.com/TeamHubDigigrow/docs-digigrow/assets/9470353/20c36c7d-1fec-46db-95bb-c4d6e00ab20b" width="500px"/>
+</p>
+<br/>
 
 ✍🏻 Documentação da API pública do Digigrow Hub
 
