@@ -224,8 +224,13 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     "width": number,
     "height": number,
     "depth": number,
-    "description": "string"
-    "brand": "string"
+    "description": "string",
+    "brand": "string",
+    "attributes" : [
+     {
+        "string": "string"
+     }
+   ]
 }
    ```
    
@@ -255,6 +260,12 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     "width": (opcional),
     "height": (opcional),
     "depth": (opcional),
-    "description": "(opcional)"
+    "description": "(opcional)",
+    "brand": "string",
+    "attributes" : [
+     {
+        "string": "string"
+     }
+   ]
 }
 ```
