@@ -33,7 +33,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 2. Listar vários pedidos (GET)
 
    ```
-   curl --location 'http://https://api-v1.digigrow.com.br/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   curl --location 'https://api-v1.digigrow.com.br/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
    --header 'Authorization: seuTokenAqui' \
    ```
    
