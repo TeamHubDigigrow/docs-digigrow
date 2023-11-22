@@ -261,11 +261,6 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     "height": (opcional),
     "depth": (opcional),
     "description": "(opcional)",
-    "brand": "string",
-    "attributes" : [
-     {
-        "string": "string"
-     }
-   ]
+    "brand": "string"
 }
 ```
