@@ -263,6 +263,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
     "depth": (opcional),
     "perPackage": (opcional),
     "description": "(opcional)",
-    "brand": "string"
+    "brand": "string",
+    "status": boolean
 }
 ```
