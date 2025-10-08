@@ -22,7 +22,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    1.1 passar número da venda no endereço como "id"
 
    ```
-   curl --location --request GET 'https://api-v1.digigrow.com.br/order/:id' \
+   curl --location --request GET 'https://api.digigrow.com.br/public/order/:id' \
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
    ```
@@ -33,7 +33,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 2. Listar vários pedidos (GET)
 
    ```
-   curl --location 'https://api-v1.digigrow.com.br/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
+   curl --location 'https://api.digigrow.com.br/public/orders?page=1&status=paid&dateStart=2023-01-2&dateEnd=2023-05-3' \
    --header 'Authorization: seuTokenAqui' \
    ```
    
@@ -110,7 +110,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    
    1.1. Passar o valor do sku no endereço da chamada
    ```
-     curl --location --request GET 'https://api-v1.digigrow.com.br/product/:id' \
+     curl --location --request GET 'https://api.digigrow.com.br/public/product/:id' \
       --header 'Authorization: seuTokenAqui'
    ```
    
@@ -120,7 +120,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 2. Listar vários produtos (GET)
    
    ```
-   curl --location 'https://api-v1.digigrow.com.br/products?page=1' \
+   curl --location 'https://api.digigrow.com.br/public/products?page=1' \
    --header 'Authorization: seuTokenAqui' \
    --data ''
    ```
@@ -200,7 +200,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
 3. Criar um produto (POST)
 
    ```
-   curl --location --request POST 'https://api-v1.digigrow.com.br/product' \
+   curl --location --request POST 'https://api.digigrow.com.br/public/product' \
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
    ```
@@ -240,7 +240,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    4.1. É obrigatório passar o sku do produto no Params da chamada. Abaixo segue exemplo dos campos a serem enviados para alterar o produto.
 
    ```
-   curl --location --request PUT 'https://api-v1.digigrow.com.br/product/:id' \
+   curl --location --request PUT 'https://api.digigrow.com.br/public/product/:id' \
    --header 'Authorization: seuTokenAqui' \
    --header 'Content-Type: application/json' \
    ```
