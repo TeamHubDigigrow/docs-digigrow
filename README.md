@@ -27,7 +27,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --header 'Content-Type: application/json' \
    ```
    
-   Endereço: https://api-v1.digigrow.com.br/order/:id
+   Endereço: https://api.digigrow.com.br/public/order/:id
    
 
 2. Listar vários pedidos (GET)
@@ -37,7 +37,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --header 'Authorization: seuTokenAqui' \
    ```
    
-   Endereço: https://api-v1.digigrow.com.br/orders
+   Endereço: https://api.digigrow.com.br/public/orders
 
    Enviar no Params:
    
@@ -114,7 +114,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
       --header 'Authorization: seuTokenAqui'
    ```
    
-   Endereço: https://api-v1.digigrow.com.br/product/:id
+   Endereço: https://api.digigrow.com.br/public/product/:id
    
 
 2. Listar vários produtos (GET)
@@ -125,7 +125,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --data ''
    ```
    
-   Endereço: https://api-v1.digigrow.com.br/products
+   Endereço: https://api.digigrow.com.br/public/products
    
 
    Enviar no Params:
@@ -205,7 +205,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --header 'Content-Type: application/json' \
    ```
    
-   Endereço: https://api-v1.digigrow.com.br/product
+   Endereço: https://api.digigrow.com.br/public/product
    
 
    Enviar no body:
@@ -245,7 +245,7 @@ Ao consumir uma API pública, é importante entender como interagir com os endpo
    --header 'Content-Type: application/json' \
    ```
 
-   Endereço: https://api-v1.digigrow.com.br/product/:id
+   Endereço: https://api.digigrow.com.br/public/product/:id
 
    
    Enviar no body:
